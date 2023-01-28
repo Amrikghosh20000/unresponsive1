@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="ctstyles.css">
+<title>Catalog Page</title>
+</head>
+<style >
+    
+    .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #009578;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  animation: loading 0.90s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+</style>
+
+<script>
+    window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+</script>
+<body>
+    <table cellpadding="200px">
+    <tr>
+       <td><a class="event" href="https://instagram.com/custy.in?igshid=YmMyMTA2M2Y=">
+        <img src="./hoodies1.jpg" alt="description"/>
+        
+        <div class="content">
+          <h3>Hoodies</h3>
+            <div class="rollover">
+                <p>When worn up, the hood covers most of the head and neck and sometimes the face. Hoodies may be worn for aesthetic purposes, or protection against the environment (cold weather, rain, etc.)
+                    Best Affordable Hoodie:<br> 
+                    <br>
+                    Amazon Essentials Fleece Pullover Hoodie, $30.
+                    Best Trendy Hoodie: SKIMS Cozy Knit Unisex Hoodie, $88.
+                     Best Expensive Hoodie: Fear of God Relaxed Fit Cotton Blend Velour Hoodie, $100.
+                     Best Graphic Hoodie: Fronage Graphic Hoodie, $27
+                </p>
+                <h3>Grab your offer soon<br> 1500/-</h3>
+                <h3>Click to connect and Place your order</h3>
+            </div>
+        </div>
+    </a>
+    </td>
+    <td><a class="event" href="https://instagram.com/custy.in?igshid=YmMyMTA2M2Y=">
+        <img src="./t-shirt.jpg" alt="description" style="width: 500px;"/>
+        
+        <div class="content">
+          <h3>T-Shirt</h3>
+            <div class="rollover">
+                <p>When worn up, the hood covers most of the head and neck and sometimes the face. Hoodies may be worn for aesthetic purposes, or protection against the environment (cold weather, rain, etc.)
+                    Best Affordable Hoodie:<br> 
+                    <br>
+                    Amazon Essentials Fleece Pullover Hoodie, $30.
+                    Best Trendy Hoodie: SKIMS Cozy Knit Unisex Hoodie, $88.
+                     Best Expensive Hoodie: Fear of God Relaxed Fit Cotton Blend Velour Hoodie, $100.
+                     Best Graphic Hoodie: Fronage Graphic Hoodie, $27
+                </p>
+                <h3>Grab your offer soon<br> 1500/-</h3>
+                <h3>Click to connect and Place your order</h3>
+            </div>
+        </div>
+    </a>
+    </td>
+    </tr>
+    <tr>
+        <td><a class="event" href="https://instagram.com/custy.in?igshid=YmMyMTA2M2Y=">
+            <img src="./Full-Sleeve-Cool-T-Shirt-For-Men_860x.jpg" alt="description" width="500px"/>
+            
+            <div class="content">
+              <h3>Full-Sleaves T-Shirt</h3>
+                <div class="rollover">
+                    <p>When worn up, the hood covers most of the head and neck and sometimes the face. Hoodies may be worn for aesthetic purposes, or protection against the environment (cold weather, rain, etc.)
+                        Best Affordable Hoodie:<br> 
+                        <br>
+                        Amazon Essentials Fleece Pullover Hoodie, $30.
+                        Best Trendy Hoodie: SKIMS Cozy Knit Unisex Hoodie, $88.
+                         Best Expensive Hoodie: Fear of God Relaxed Fit Cotton Blend Velour Hoodie, $100.
+                         Best Graphic Hoodie: Fronage Graphic Hoodie, $27
+                    </p>
+                    <h3>Grab your offer soon<br> 1500/-</h3>
+                    <h3>Click to connect and Place your order</h3>
+                </div>
+            </div>
+        </a>
+        </td>
+
+        <td><a class="event" href="https://instagram.com/custy.in?igshid=YmMyMTA2M2Y=">
+            <img src="./akatsuki-necklace.jpg" alt="description" width="550px"/>
+            
+            <div class="content">
+              <h3>Accessories</h3>
+                <div class="rollover">
+                    <p>When worn up, the hood covers most of the head and neck and sometimes the face. Hoodies may be worn for aesthetic purposes, or protection against the environment (cold weather, rain, etc.)
+                        Best Affordable Hoodie:<br> 
+                        <br>
+                        Amazon Essentials Fleece Pullover Hoodie, $30.
+                        Best Trendy Hoodie: SKIMS Cozy Knit Unisex Hoodie, $88.
+                         Best Expensive Hoodie: Fear of God Relaxed Fit Cotton Blend Velour Hoodie, $100.
+                         Best Graphic Hoodie: Fronage Graphic Hoodie, $27
+                    </p>
+                    <h3>Grab your offer soon<br> 1500/-</h3>
+                    <h3>Click to connect and Place your order</h3>
+                </div>
+            </div>
+        </a>
+        </td>
+    </tr>
+    </table>
+    <div class="loader"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
